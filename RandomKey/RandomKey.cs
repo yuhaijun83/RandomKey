@@ -255,6 +255,11 @@ namespace RandomKey
             System.Environment.Exit(0);
         }
 
+        private void ToolStripMenuItem_Exit_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
+        }
+
         private void Btn_Clear_Click(object sender, EventArgs e)
         {
             this.TextBox_RandomKey.Text = string.Empty;
@@ -328,7 +333,7 @@ namespace RandomKey
             {
                 MessageBox.Show("Please select the key set !", "Warning",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
-                this.TextBox_OtherBytes.Focus();
+                this.CheckBox_Half_UppercaseLetters.Focus();
                 return;
             }
 

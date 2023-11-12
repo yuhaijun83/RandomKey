@@ -78,6 +78,8 @@
             this.GroupBox_RandomKey = new System.Windows.Forms.GroupBox();
             this.TextBox_RandomKey = new System.Windows.Forms.TextBox();
             this.BtnExit = new System.Windows.Forms.Button();
+            this.ToolStripMenuItem_Exit = new System.Windows.Forms.ToolStripMenuItem();
+            this.ContextMenuStripMain.SuspendLayout();
             this.GroupBox_KeySet.SuspendLayout();
             this.GroupBox_KeyLength.SuspendLayout();
             this.GroupBox_KeySeed.SuspendLayout();
@@ -94,8 +96,10 @@
             // ContextMenuStripMain
             // 
             this.ContextMenuStripMain.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.ContextMenuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem_Exit});
             this.ContextMenuStripMain.Name = "ContextMenuStripMain";
-            this.ContextMenuStripMain.Size = new System.Drawing.Size(61, 4);
+            this.ContextMenuStripMain.Size = new System.Drawing.Size(211, 56);
             // 
             // GroupBox_KeySet
             // 
@@ -619,6 +623,13 @@
             this.BtnExit.UseVisualStyleBackColor = true;
             this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
+            // ToolStripMenuItem_Exit
+            // 
+            this.ToolStripMenuItem_Exit.Name = "ToolStripMenuItem_Exit";
+            this.ToolStripMenuItem_Exit.Size = new System.Drawing.Size(210, 24);
+            this.ToolStripMenuItem_Exit.Text = "Exit";
+            this.ToolStripMenuItem_Exit.Click += new System.EventHandler(this.ToolStripMenuItem_Exit_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -633,6 +644,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RandomKey";
             this.Load += new System.EventHandler(this.FormMain_Load);
+            this.ContextMenuStripMain.ResumeLayout(false);
             this.GroupBox_KeySet.ResumeLayout(false);
             this.GroupBox_KeySet.PerformLayout();
             this.GroupBox_KeyLength.ResumeLayout(false);
@@ -695,6 +707,7 @@
         private System.Windows.Forms.Label Label_TheNumberOnly;
         private System.Windows.Forms.Label Label_KeySet_TheOthersChars1;
         private System.Windows.Forms.Label Label_KeySet_TheOthersChars2;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Exit;
     }
 }
 

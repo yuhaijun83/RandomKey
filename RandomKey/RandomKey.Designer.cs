@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.NotifyIconMain = new System.Windows.Forms.NotifyIcon(this.components);
             this.ContextMenuStripMain = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ToolStripMenuItem_Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.GroupBox_KeySet = new System.Windows.Forms.GroupBox();
             this.Label_KeySet_TheOthersChars2 = new System.Windows.Forms.Label();
             this.Label_KeySet_TheOthersChars1 = new System.Windows.Forms.Label();
@@ -78,7 +79,6 @@
             this.GroupBox_RandomKey = new System.Windows.Forms.GroupBox();
             this.TextBox_RandomKey = new System.Windows.Forms.TextBox();
             this.BtnExit = new System.Windows.Forms.Button();
-            this.ToolStripMenuItem_Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.ContextMenuStripMain.SuspendLayout();
             this.GroupBox_KeySet.SuspendLayout();
             this.GroupBox_KeyLength.SuspendLayout();
@@ -99,7 +99,14 @@
             this.ContextMenuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItem_Exit});
             this.ContextMenuStripMain.Name = "ContextMenuStripMain";
-            this.ContextMenuStripMain.Size = new System.Drawing.Size(211, 56);
+            this.ContextMenuStripMain.Size = new System.Drawing.Size(105, 28);
+            // 
+            // ToolStripMenuItem_Exit
+            // 
+            this.ToolStripMenuItem_Exit.Name = "ToolStripMenuItem_Exit";
+            this.ToolStripMenuItem_Exit.Size = new System.Drawing.Size(104, 24);
+            this.ToolStripMenuItem_Exit.Text = "Exit";
+            this.ToolStripMenuItem_Exit.Click += new System.EventHandler(this.ToolStripMenuItem_Exit_Click);
             // 
             // GroupBox_KeySet
             // 
@@ -423,21 +430,21 @@
             // Label_TheNumberOnly
             // 
             this.Label_TheNumberOnly.AutoSize = true;
-            this.Label_TheNumberOnly.Location = new System.Drawing.Point(211, 95);
+            this.Label_TheNumberOnly.Location = new System.Drawing.Point(245, 95);
             this.Label_TheNumberOnly.Name = "Label_TheNumberOnly";
-            this.Label_TheNumberOnly.Size = new System.Drawing.Size(191, 15);
+            this.Label_TheNumberOnly.Size = new System.Drawing.Size(143, 15);
             this.Label_TheNumberOnly.TabIndex = 2;
-            this.Label_TheNumberOnly.Text = "(Input The Number Only)";
+            this.Label_TheNumberOnly.Text = "(The Number Only)";
             // 
             // TextBox_OtherBytes
             // 
             this.TextBox_OtherBytes.Enabled = false;
             this.TextBox_OtherBytes.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TextBox_OtherBytes.Location = new System.Drawing.Point(157, 89);
-            this.TextBox_OtherBytes.MaxLength = 3;
+            this.TextBox_OtherBytes.Location = new System.Drawing.Point(145, 89);
+            this.TextBox_OtherBytes.MaxLength = 9;
             this.TextBox_OtherBytes.Name = "TextBox_OtherBytes";
             this.TextBox_OtherBytes.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TextBox_OtherBytes.Size = new System.Drawing.Size(48, 25);
+            this.TextBox_OtherBytes.Size = new System.Drawing.Size(95, 25);
             this.TextBox_OtherBytes.TabIndex = 25;
             this.TextBox_OtherBytes.TextChanged += new System.EventHandler(this.TextBox_OtherBytes_TextChanged);
             this.TextBox_OtherBytes.Leave += new System.EventHandler(this.TextBox_OtherBytes_Leave);
@@ -622,13 +629,6 @@
             this.BtnExit.Text = "Exit";
             this.BtnExit.UseVisualStyleBackColor = true;
             this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
-            // 
-            // ToolStripMenuItem_Exit
-            // 
-            this.ToolStripMenuItem_Exit.Name = "ToolStripMenuItem_Exit";
-            this.ToolStripMenuItem_Exit.Size = new System.Drawing.Size(210, 24);
-            this.ToolStripMenuItem_Exit.Text = "Exit";
-            this.ToolStripMenuItem_Exit.Click += new System.EventHandler(this.ToolStripMenuItem_Exit_Click);
             // 
             // FormMain
             // 

@@ -61,7 +61,7 @@ namespace RandomKey.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Build v23.12.010 的本地化字符串。
+        ///   查找类似 Build v23.12.020 的本地化字符串。
         /// </summary>
         internal static string RandomKey_Build_Version {
             get {

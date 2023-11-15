@@ -12,13 +12,15 @@ namespace RandomKey
         private const string KEY_SET_HALT_UPPERCASE_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         private const string KEY_SET_HALT_LOWERCASE_LETTERS = "abcdefghijklmnopqrstuvwxyz";
         private const string KEY_SET_HALT_NUMBERS = "1234567890";
-        private const string KEY_SET_HALT_SPECIAL_CHARACTERS = "~!@#$%^&*()_+`-={}|[]\\:\";'<>?,./";
+        //private const string KEY_SET_HALT_SPECIAL_CHARACTERS = "~!@#$%^&*()_+`-={}|[]\\:\";'<>?,./ ";
+        private const string KEY_SET_HALT_SPECIAL_CHARACTERS = "~!@#$%^&*()_+`-={}|[]:;'<>?,./";
         private const string KEY_SET_HALT_KATAKANA = "ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾑﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜｵﾝ";
 
         private const string KEY_SET_FULL_UPPERCASE_LETTERS = "ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＲＵＶＷＸＹＺ";
         private const string KEY_SET_FULL_LOWERCASE_LETTERS = "ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ";
         private const string KEY_SET_FULL_NUMBERS = "１２３４５６７８９０";
-        private const string KEY_SET_FULL_SPECIAL_CHARACTERS = "～！＠＃＄％＾＆＊（）＿＋‘－＝｛｝｜［］￥：”；’＜＞？，．／　";
+        //private const string KEY_SET_FULL_SPECIAL_CHARACTERS = "～！＠＃＄％＾＆＊（）＿＋‘－＝｛｝｜［］￥：”；’＜＞？，．／　";
+        private const string KEY_SET_FULL_SPECIAL_CHARACTERS = "～！＠＃＄％＾＆＊（）＿＋‘－＝｛｝｜［］￥：”；’＜＞？，．／";
         private const string KEY_SET_FULL_HIRAGANA = "あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわおン";
         private const string KEY_SET_FULL_KATAKANA = "アイウエオカキクケコサシスセソタチツテトナニムネノハヒフヘホマミムメモヤユヨラリルレロワオン";
 

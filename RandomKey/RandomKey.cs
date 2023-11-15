@@ -12,7 +12,7 @@ namespace RandomKey
         private const string KEY_SET_HALT_UPPERCASE_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         private const string KEY_SET_HALT_LOWERCASE_LETTERS = "abcdefghijklmnopqrstuvwxyz";
         private const string KEY_SET_HALT_NUMBERS = "1234567890";
-        private const string KEY_SET_HALT_SPECIAL_CHARACTERS = "~!@#$%^&*()_+`-={}|[]\\:\";'<>?,./ ";
+        private const string KEY_SET_HALT_SPECIAL_CHARACTERS = "~!@#$%^&*()_+`-={}|[]\\:\";'<>?,./";
         private const string KEY_SET_HALT_KATAKANA = "ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾑﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜｵﾝ";
 
         private const string KEY_SET_FULL_UPPERCASE_LETTERS = "ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＲＵＶＷＸＹＺ";
@@ -397,6 +397,10 @@ namespace RandomKey
             this.TextBox_RandomKey.Text = sb.ToString();
             this.TextBox_RandomKey.ForeColor = Color.Red;
         }
+        private void Btn_RandomKey_Copy_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetDataObject(this.TextBox_RandomKey.Text);
+        }
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -455,5 +459,6 @@ namespace RandomKey
 
             this.TextBox_KeySeed.Text = strRet;
         }
+
     }
 }

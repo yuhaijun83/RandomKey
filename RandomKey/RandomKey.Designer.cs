@@ -79,6 +79,7 @@
             this.GroupBox_RandomKey = new System.Windows.Forms.GroupBox();
             this.TextBox_RandomKey = new System.Windows.Forms.TextBox();
             this.BtnExit = new System.Windows.Forms.Button();
+            this.Btn_RandomKey_Copy = new System.Windows.Forms.Button();
             this.ContextMenuStripMain.SuspendLayout();
             this.GroupBox_KeySet.SuspendLayout();
             this.GroupBox_KeyLength.SuspendLayout();
@@ -430,21 +431,21 @@
             // Label_TheNumberOnly
             // 
             this.Label_TheNumberOnly.AutoSize = true;
-            this.Label_TheNumberOnly.Location = new System.Drawing.Point(245, 95);
+            this.Label_TheNumberOnly.Location = new System.Drawing.Point(222, 95);
             this.Label_TheNumberOnly.Name = "Label_TheNumberOnly";
-            this.Label_TheNumberOnly.Size = new System.Drawing.Size(143, 15);
+            this.Label_TheNumberOnly.Size = new System.Drawing.Size(191, 15);
             this.Label_TheNumberOnly.TabIndex = 2;
-            this.Label_TheNumberOnly.Text = "(The Number Only)";
+            this.Label_TheNumberOnly.Text = "(Input The Number Only)";
             // 
             // TextBox_OtherBytes
             // 
             this.TextBox_OtherBytes.Enabled = false;
             this.TextBox_OtherBytes.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.TextBox_OtherBytes.Location = new System.Drawing.Point(145, 89);
-            this.TextBox_OtherBytes.MaxLength = 9;
+            this.TextBox_OtherBytes.MaxLength = 6;
             this.TextBox_OtherBytes.Name = "TextBox_OtherBytes";
             this.TextBox_OtherBytes.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TextBox_OtherBytes.Size = new System.Drawing.Size(95, 25);
+            this.TextBox_OtherBytes.Size = new System.Drawing.Size(71, 25);
             this.TextBox_OtherBytes.TabIndex = 25;
             this.TextBox_OtherBytes.TextChanged += new System.EventHandler(this.TextBox_OtherBytes_TextChanged);
             this.TextBox_OtherBytes.Leave += new System.EventHandler(this.TextBox_OtherBytes_Leave);
@@ -583,7 +584,6 @@
             this.TextBox_KeySeed.Multiline = true;
             this.TextBox_KeySeed.Name = "TextBox_KeySeed";
             this.TextBox_KeySeed.ReadOnly = true;
-            this.TextBox_KeySeed.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.TextBox_KeySeed.Size = new System.Drawing.Size(416, 144);
             this.TextBox_KeySeed.TabIndex = 27;
             // 
@@ -599,6 +599,7 @@
             // 
             // GroupBox_RandomKey
             // 
+            this.GroupBox_RandomKey.Controls.Add(this.Btn_RandomKey_Copy);
             this.GroupBox_RandomKey.Controls.Add(this.TextBox_RandomKey);
             this.GroupBox_RandomKey.Controls.Add(this.Btn_CreateKey);
             this.GroupBox_RandomKey.Controls.Add(this.BtnExit);
@@ -612,7 +613,7 @@
             // 
             // TextBox_RandomKey
             // 
-            this.TextBox_RandomKey.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TextBox_RandomKey.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.TextBox_RandomKey.Location = new System.Drawing.Point(6, 61);
             this.TextBox_RandomKey.Multiline = true;
             this.TextBox_RandomKey.Name = "TextBox_RandomKey";
@@ -630,6 +631,16 @@
             this.BtnExit.UseVisualStyleBackColor = true;
             this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
+            // Btn_RandomKey_Copy
+            // 
+            this.Btn_RandomKey_Copy.Location = new System.Drawing.Point(354, 142);
+            this.Btn_RandomKey_Copy.Name = "Btn_RandomKey_Copy";
+            this.Btn_RandomKey_Copy.Size = new System.Drawing.Size(59, 34);
+            this.Btn_RandomKey_Copy.TabIndex = 32;
+            this.Btn_RandomKey_Copy.Text = "Copy";
+            this.Btn_RandomKey_Copy.UseVisualStyleBackColor = true;
+            this.Btn_RandomKey_Copy.Click += new System.EventHandler(this.Btn_RandomKey_Copy_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -640,6 +651,7 @@
             this.Controls.Add(this.GroupBox_KeyLength);
             this.Controls.Add(this.GroupBox_KeySet);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RandomKey";
@@ -708,6 +720,7 @@
         private System.Windows.Forms.Label Label_KeySet_TheOthersChars1;
         private System.Windows.Forms.Label Label_KeySet_TheOthersChars2;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Exit;
+        private System.Windows.Forms.Button Btn_RandomKey_Copy;
     }
 }
 
